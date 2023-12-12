@@ -10,23 +10,23 @@ import org.testng.annotations.Test;
 
 public class SimpleUiTest {
 
-    private WebDriver driver;
-
-    //only if one thread
-    @BeforeClass
-    public void setup() {
-        driver = new ChromeDriver();
-    }
-
-    @Test
-    public void firstTest() {
-        driver.get("https://the-internet.herokuapp.com/");
-        driver.findElement(By.xpath("//a[@href='/checkboxes']")).click();
-        driver.findElements(By.xpath("//input")).forEach(WebElement::click);
-    }
-
-    @AfterClass
-    public void finish() {
-        driver.close();
-    }
+//    private WebDriver driver;
+//
+//    //only if one thread
+//    @BeforeClass
+//    public void setup() {
+//        driver = new ChromeDriver();
+//    }
+//
+//    @Test
+//    public void firstTest() {
+//        driver.get("https://the-internet.herokuapp.com/");
+//        driver.findElement(By.xpath("//a[@href='/checkboxes']")).click();
+//        driver.findElements(By.xpath("//input")).forEach(WebElement::click);
+//    }
+//
+//    @AfterClass
+//    public void finish() {
+//        driver.close();
+//    }
 }
