@@ -3,7 +3,8 @@
 <suite name="Suite1" verbose="1" >
     <test name="Regression1">
         <classes>
-            <class name="ui.SimpleTest"/>
+            <class name="ui.SimpleUiTest"/>
+            <class name="api.SimpleApiTest"/>
         </classes>
     </test>
 </suite>
